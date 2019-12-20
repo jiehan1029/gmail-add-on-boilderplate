@@ -1,0 +1,55 @@
+{
+  "oauthScopes": [
+    "https://www.googleapis.com/auth/gmail.addons.execute",
+    "https://www.googleapis.com/auth/gmail.addons.current.action.compose",
+    "https://www.googleapis.com/auth/gmail.addons.current.message.metadata",
+    "https://www.googleapis.com/auth/gmail.addons.current.message.action",
+    "https://www.googleapis.com/auth/gmail.addons.current.message.readonly",
+    "https://www.googleapis.com/auth/gmail.modify",
+    "https://www.googleapis.com/auth/script.locale",
+    "https://www.googleapis.com/auth/script.external_request"
+  ],
+  "urlFetchWhitelist": [
+    "https://www.google.com/",
+    "https://newsapi.org/"
+  ],
+  "gmail": {
+    "name": "Gmail Add-on Boilerplate",
+    "logoUrl": "https://www.gstatic.com/images/icons/material/system/1x/label_googblue_24dp.png",
+    "primaryColor": "#4285F4",
+    "secondaryColor": "#4285F4",
+    "authorizationCheckFunction": "get3PAuthorizationUrls",
+    "contextualTriggers": [{
+      "unconditional": {
+      },
+      "onTriggerFunction": "buildContextualAddOn"
+    }],
+    "composeTrigger": {
+      "selectActions": [
+        {
+          "text": "show sidebar on compose",
+          "runFunction": "buildComposeAddOn"
+        }
+      ],
+      "draftAccess": "METADATA"
+    },
+    "openLinkUrlPrefixes": [
+      "https://mail.google.com/",
+      "https://airplane.com/",
+      "https://trycultivate.com/",
+      "https://www.google.com/",
+      "https://newsapi.org/"
+    ],
+    "universalActions": [
+      {
+        "text": "universal action example",
+        "runFunction": "createSettingsResponse"
+      },
+      {
+        "text": "show error UI",
+        "runFunction": "showErrorUIexample"
+      }
+    ],
+    "useLocaleFromApp": true
+  }
+}
