@@ -28,8 +28,11 @@ use `try{...}catch(e){...}` to render error handling UI, for example `universalA
 ### External API
 * put external api domain to `urlFetchWhitelist` field of `appsscript.json` -- only allow https protocol, and must have trailing slash.
 * check `buildExternalCard.onConfirmDropdown`.
+
 [connect to non-google services](https://developers.google.com/gsuite/add-ons/how-tos/non-google-services)
+
 [UrlFetchApp class](https://developers.google.com/apps-script/reference/url-fetch/)
+
 Examle external api used for testing: [News API](https://newsapi.org/docs/endpoints/top-headlines). Need to register and get free API Key.
 
 ### Contextual triggered and Compose triggered Add-ons
@@ -53,7 +56,11 @@ Note: can also use `MailApp` to send mail instead of `GmailApp`, [docs](https://
 
 #### Some reference shortcuts
 [official doc for add-ons](https://developers.google.com/gsuite/add-ons/overview)
+
 [Manifest structure](https://developers.google.com/apps-script/manifest)
+
 [gmail scopes(add-on)](https://developers.google.com/gsuite/add-ons/concepts/gmail-scopes)
+
 [gmail scopes](https://developers.google.com/gmail/api/auth/scopes)
+
 [google scopes](https://developers.google.com/identity/protocols/googlescopes)
