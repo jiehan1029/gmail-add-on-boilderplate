@@ -91,7 +91,7 @@ function handleNewLabelInput(e){
  * @param {Object} e The data provided by the Gmail UI.
 */
 function toggleLabel(e){
-  console.info('****** toggleLabel, e = ', e);
+  Logger.log('****** toggleLabel, e = ', e);
   var selected = e.formInputs.labels;
 
   // Activate temporary Gmail add-on scopes.

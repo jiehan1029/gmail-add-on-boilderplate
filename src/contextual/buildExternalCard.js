@@ -54,7 +54,7 @@ function buildExternalCard(e){
 function onConfirmDropdown(e){
   var field = {'dropdown1': e.formInputs.dropdown1[0], 'dropdown2': e.formInputs.dropdown2[0]};
   var apiKey = e.formInputs.api_key[0];
-  console.info('onConfirmDropdown, field = ', field, ', apiKey = ', apiKey);
+  Logger.log('onConfirmDropdown, field = ', field, ', apiKey = ', apiKey);
 
   // fetch a 3rd party api (no oauth needed)
   var key = '75dd6c8bfe4943928a057d46fecd73cc';
@@ -71,7 +71,7 @@ function onConfirmDropdown(e){
 }
 
 function showFailureCard(code){
-  console.info('showFailureCard, ', code);
+  Logger.log('showFailureCard, ', code);
   var np = CardService.newTextParagraph()
     .setText(code);
   var section = CardService.newCardSection()
@@ -90,7 +90,7 @@ function showFailureCard(code){
 }
 
 function showSuccessCard(content){
-  console.info('showSuccessCard');
+  Logger.log('showSuccessCard');
   var np = CardService.newTextParagraph()
     .setText(content);
   var section = CardService.newCardSection()

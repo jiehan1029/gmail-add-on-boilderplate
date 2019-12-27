@@ -35,6 +35,7 @@ Examle external api used for testing: [News API](https://newsapi.org/docs/endpoi
 ### Contextual triggered and Compose triggered Add-ons
 * Cards for contextual and for compose may not be used interchangeably, because the two triggers pass different information to the callbacks.
 * UI components are the same.
+* Compose trigger event object does not contain accessToken, thus cannot use some `GmailApp` methods, such as `GmailApp.createDraft()`. Use `Gmail API` instead. See example codes in `./compose/composeAddOn`.
 
 ### Examples of implementation
 * search threads

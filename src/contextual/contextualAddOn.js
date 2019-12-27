@@ -24,7 +24,7 @@
  * @return {Card[]}
  */
 function buildContextualAddOn(e, disabledBtn3) {
-  console.info(e);
+  Logger.log('buildContextualAddOn, ', e, disabledBtn3)
 
   var labelCard = buildLabelCard(e);
   var buttonCard = buildButtonCard(e, disabledBtn3);

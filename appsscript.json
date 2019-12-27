@@ -1,4 +1,12 @@
 {
+  "dependencies": {
+    "enabledAdvancedServices": [{
+      "userSymbol": "Gmail",
+      "serviceId": "gmail",
+      "version": "v1"
+    }]    
+  },
+  "exceptionLogging": "STACKDRIVER",
   "oauthScopes": [
     "https://www.googleapis.com/auth/gmail.addons.execute",
     "https://www.googleapis.com/auth/gmail.addons.current.action.compose",
@@ -11,7 +19,8 @@
   ],
   "urlFetchWhitelist": [
     "https://www.google.com/",
-    "https://newsapi.org/"
+    "https://newsapi.org/",
+    "https://www.googleapis.com/"
   ],
   "gmail": {
     "name": "Gmail Add-on Boilerplate",
